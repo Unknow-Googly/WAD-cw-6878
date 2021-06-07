@@ -12,24 +12,24 @@ namespace WAD_CW_6878.Repositories
        
         public async Task DeleteAsync(int id)
         {
-            var user = await _context.Users.FindAsync(id);
-            _context.Users.Remove(user);
-            await _context.SaveChangesAsync();
+            var user = await dbContext.Users.FindAsync(id);
+            dbContext.Users.Remove(user);
+            await dbContext.SaveChangesAsync();
         }
 
         public bool Exists(int id)
         {
-            return _context.Users.Any(m => m.UserId == id);
+            return dbContext.Users.Any(m => m.UserId == id);
         }
 
-        public async Task<List<User>> GetAll()
+        public async Task<List<User>> GetAllAsync()
         {
-            return await _context.Users.ToListAsync();
+            return await dbContext.Users.ToListAsync();
         }
 
         public async Task<User> FindAsync(int id)
         {
-            return await _context.Users.FirstOrDefaultAsync(m => m.UserId == id);
+            return await dbContext.Users.FirstOrDefaultAsync(m => m.UserId == id);
         }
 
         public UserRepository(BlogDBContext context) : base(context)

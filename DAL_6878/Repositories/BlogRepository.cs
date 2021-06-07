@@ -23,7 +23,7 @@ namespace WAD_CW_6878.Repositories
             throw new NotImplementedException();
         }
 
-        public Task<List<Blog>> GetAll()
+        public Task<List<Blog>> GetAllAsync()
         {
             throw new NotImplementedException();
         }

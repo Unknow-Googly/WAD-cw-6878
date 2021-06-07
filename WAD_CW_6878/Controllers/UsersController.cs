@@ -26,7 +26,7 @@ namespace WAD_CW_6878.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<User>>> GetUsers()
         {
-            var all = await userRepository.GetAll();
+            var all = await userRepository.GetAllAsync();
 
             return all;
             //return await userRepository.Users.ToListAsync();
@@ -60,7 +60,7 @@ namespace WAD_CW_6878.Controllers
 
             try
             {
-                await userRepository.SaveChangesAsync(user);
+                await userRepository.UpdateAsync(user);
             }
             catch (DbUpdateConcurrencyException)
             {

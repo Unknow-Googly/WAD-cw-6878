@@ -8,13 +8,13 @@ namespace WAD_CW_6878.Repositories
 {
     public abstract class InsertUpdateRepo<T> where T : class
     {
-        protected readonly BlogDBContext _context;
+        protected readonly BlogDBContext dbContext;
         
 
-        public async Task SaveChangesAsync(T entity)
+        public async Task UpdateAsync(T entity)
         {
-            _context.Update(entity);
-            await _context.SaveChangesAsync();
+            dbContext.Update(entity);
+            await dbContext.SaveChangesAsync();
         }
 
         /// <summary>
@@ -24,8 +24,8 @@ namespace WAD_CW_6878.Repositories
         /// <returns></returns>
         public async Task InsertAsync(T entity)
         {
-            _context.Add(entity);
-            await _context.SaveChangesAsync();
+            dbContext.Add(entity);
+            await dbContext.SaveChangesAsync();
         }
 
         /// <summary>
@@ -34,7 +34,7 @@ namespace WAD_CW_6878.Repositories
         /// <param name="context"></param>
         protected InsertUpdateRepo(BlogDBContext context)
         {
-            _context = context;
+            dbContext = context;
         }
 
     }
