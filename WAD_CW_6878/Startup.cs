@@ -32,6 +32,18 @@ namespace WAD_CW_6878
             services.AddScoped<IRepository<User>, UserRepository>();
             services.AddScoped<IRepository<Blog>, BlogRepository>();
             services.AddDbContext<BlogDBContext>(options => options.UseSqlServer(Configuration.GetConnectionString("BlogDb")));
+
+            services.AddCors(options =>
+            {
+                options.AddPolicy(name: "_myAllowSpecificOrigins",
+                    builder =>
+                    {
+                        builder.WithOrigins("*")
+                            .AllowAnyHeader()
+                            .AllowAnyMethod();
+                    });
+            });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

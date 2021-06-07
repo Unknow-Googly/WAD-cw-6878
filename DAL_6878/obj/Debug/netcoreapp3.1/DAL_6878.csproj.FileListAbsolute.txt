@@ -1,0 +1,12 @@
+C:\WIUT\00006878\WAD_6878\WAD_CW_6878\DAL_6878\bin\Debug\netcoreapp3.1\DAL_6878.deps.json
+C:\WIUT\00006878\WAD_6878\WAD_CW_6878\DAL_6878\bin\Debug\netcoreapp3.1\DAL_6878.dll
+C:\WIUT\00006878\WAD_6878\WAD_CW_6878\DAL_6878\bin\Debug\netcoreapp3.1\DAL_6878.pdb
+C:\WIUT\00006878\WAD_6878\WAD_CW_6878\DAL_6878\obj\Debug\netcoreapp3.1\DAL_6878.csprojAssemblyReference.cache
+C:\WIUT\00006878\WAD_6878\WAD_CW_6878\DAL_6878\obj\Debug\netcoreapp3.1\DAL_6878.AssemblyInfoInputs.cache
+C:\WIUT\00006878\WAD_6878\WAD_CW_6878\DAL_6878\obj\Debug\netcoreapp3.1\DAL_6878.AssemblyInfo.cs
+C:\WIUT\00006878\WAD_6878\WAD_CW_6878\DAL_6878\obj\Debug\netcoreapp3.1\DAL_6878.csproj.CoreCompileInputs.cache
+C:\WIUT\00006878\WAD_6878\WAD_CW_6878\DAL_6878\obj\Debug\netcoreapp3.1\DAL_6878.dll
+C:\WIUT\00006878\WAD_6878\WAD_CW_6878\DAL_6878\obj\Debug\netcoreapp3.1\DAL_6878.pdb
+C:\WIUT\00006878\WAD_6878\WAD_CW_6878\DAL_6878\bin\Debug\netcoreapp3.1\DAL_6878.runtimeconfig.json
+C:\WIUT\00006878\WAD_6878\WAD_CW_6878\DAL_6878\bin\Debug\netcoreapp3.1\DAL_6878.runtimeconfig.dev.json
+C:\WIUT\00006878\WAD_6878\WAD_CW_6878\DAL_6878\obj\Debug\netcoreapp3.1\DAL_6878.genruntimeconfig.cache
