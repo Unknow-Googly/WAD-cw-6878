@@ -7498,11 +7498,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\WIUT\\00006878\\WAD_6878\\WAD_CW_6878\\WAD_CW_6878\\WAD_CW_6878.csproj",
+      "projectUniqueName": "c:\\WIUT\\00006878\\WAD_6878\\WAD_CW_6878\\WAD_CW_6878\\WAD_CW_6878.csproj",
       "projectName": "WAD_CW_6878",
-      "projectPath": "C:\\WIUT\\00006878\\WAD_6878\\WAD_CW_6878\\WAD_CW_6878\\WAD_CW_6878.csproj",
+      "projectPath": "c:\\WIUT\\00006878\\WAD_6878\\WAD_CW_6878\\WAD_CW_6878\\WAD_CW_6878.csproj",
       "packagesPath": "C:\\Users\\akhad\\.nuget\\packages\\",
-      "outputPath": "C:\\WIUT\\00006878\\WAD_6878\\WAD_CW_6878\\WAD_CW_6878\\obj\\",
+      "outputPath": "c:\\WIUT\\00006878\\WAD_6878\\WAD_CW_6878\\WAD_CW_6878\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\akhad\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7519,8 +7519,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\WIUT\\00006878\\WAD_6878\\WAD_CW_6878\\DAL_6878\\DAL_6878.csproj": {
-              "projectPath": "C:\\WIUT\\00006878\\WAD_6878\\WAD_CW_6878\\DAL_6878\\DAL_6878.csproj"
+            "c:\\WIUT\\00006878\\WAD_6878\\WAD_CW_6878\\DAL_6878\\DAL_6878.csproj": {
+              "projectPath": "c:\\WIUT\\00006878\\WAD_6878\\WAD_CW_6878\\DAL_6878\\DAL_6878.csproj"
             }
           }
         }

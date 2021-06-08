@@ -35,7 +35,7 @@ namespace WAD_CW_6878
 
             services.AddCors(options =>
             {
-                options.AddPolicy(name: "_myAllowSpecificOrigins",
+                options.AddPolicy(name: "cors_all_allow_origins",
                     builder =>
                     {
                         builder.WithOrigins("*")
@@ -54,6 +54,7 @@ namespace WAD_CW_6878
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseCors("cors_all_allow_origins");
             app.UseHttpsRedirection();
 
             app.UseRouting();
