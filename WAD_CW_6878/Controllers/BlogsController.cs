@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WAD_CW_6878.Models;
+using WAD_CW_6878.Repositories;
 
 namespace WAD_CW_6878.Controllers
 {
@@ -13,25 +14,28 @@ namespace WAD_CW_6878.Controllers
     [ApiController]
     public class BlogsController : ControllerBase
     {
-        private readonly BlogDBContext _context;
+        //private readonly BlogDBContext _context;
 
-        public BlogsController(BlogDBContext context)
+        private IRepository<Blog> blogRepository;
+        public BlogsController(IRepository<Blog> context)
         {
-            _context = context;
+            //_context = context;
+            blogRepository = context;
+
         }
 
         // GET: api/Blogs
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Blog>>> GetBlogs()
         {
-            return await _context.Blogs.ToListAsync();
+            return await blogRepository.GetAllAsync();//_context.Blogs.ToListAsync();
         }
 
         // GET: api/Blogs/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Blog>> GetBlog(int id)
         {
-            var blog = await _context.Blogs.FindAsync(id);
+            var blog = await blogRepository.FindAsync(id);//_context.Blogs.FindAsync(id);
 
             if (blog == null)
             {
@@ -51,11 +55,11 @@ namespace WAD_CW_6878.Controllers
                 return BadRequest();
             }
 
-            _context.Entry(blog).State = EntityState.Modified;
+            //_context.Entry(blog).State = EntityState.Modified;
 
             try
             {
-                await _context.SaveChangesAsync();
+                await blogRepository.UpdateAsync(blog);//_context.SaveChangesAsync();
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -77,8 +81,8 @@ namespace WAD_CW_6878.Controllers
         [HttpPost]
         public async Task<ActionResult<Blog>> PostBlog(Blog blog)
         {
-            _context.Blogs.Add(blog);
-            await _context.SaveChangesAsync();
+            //_context.Blogs.Add(blog);
+            await blogRepository.InsertAsync(blog);//_context.SaveChangesAsync();
 
             return CreatedAtAction("GetBlog", new { id = blog.BlogId }, blog);
         }
@@ -87,21 +91,21 @@ namespace WAD_CW_6878.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteBlog(int id)
         {
-            var blog = await _context.Blogs.FindAsync(id);
+            var blog = blogRepository.FindAsync(id);//await _context.Blogs.FindAsync(id);
             if (blog == null)
             {
                 return NotFound();
             }
 
-            _context.Blogs.Remove(blog);
-            await _context.SaveChangesAsync();
+            //_context.Blogs.Remove(blog);
+            await blogRepository.DeleteAsync(id);//_context.SaveChangesAsync();
 
             return NoContent();
         }
 
         private bool BlogExists(int id)
         {
-            return _context.Blogs.Any(e => e.BlogId == id);
+            return blogRepository.Exists(id);//_context.Blogs.Any(e => e.BlogId == id);
         }
     }
 }

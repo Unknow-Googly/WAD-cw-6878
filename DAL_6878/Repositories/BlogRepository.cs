@@ -25,7 +25,9 @@ namespace WAD_CW_6878.Repositories
 
         public async Task<List<Blog>> GetAllAsync()
         {
-            return await dbContext.Blogs.Include(b => b.User).ToListAsync();
+            return await dbContext.Blogs
+                .Include(b => b.User)
+                .ToListAsync();
         }
 
         public async Task<Blog> FindAsync(int id)
