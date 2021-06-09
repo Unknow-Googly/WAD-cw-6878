@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\WIUT\\00006878\\WAD_6878\\WAD_CW_6878\\WAD_CW_6878\\WAD_CW_6878.csproj": {}
+    "C:\\WIUT\\00006878\\WAD_6878\\WAD_CW_6878\\WAD_CW_6878\\WAD_CW_6878.csproj": {}
   },
   "projects": {
-    "c:\\WIUT\\00006878\\WAD_6878\\WAD_CW_6878\\DAL_6878\\DAL_6878.csproj": {
+    "C:\\WIUT\\00006878\\WAD_6878\\WAD_CW_6878\\DAL_6878\\DAL_6878.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\WIUT\\00006878\\WAD_6878\\WAD_CW_6878\\DAL_6878\\DAL_6878.csproj",
+        "projectUniqueName": "C:\\WIUT\\00006878\\WAD_6878\\WAD_CW_6878\\DAL_6878\\DAL_6878.csproj",
         "projectName": "DAL_6878",
-        "projectPath": "c:\\WIUT\\00006878\\WAD_6878\\WAD_CW_6878\\DAL_6878\\DAL_6878.csproj",
+        "projectPath": "C:\\WIUT\\00006878\\WAD_6878\\WAD_CW_6878\\DAL_6878\\DAL_6878.csproj",
         "packagesPath": "C:\\Users\\akhad\\.nuget\\packages\\",
-        "outputPath": "c:\\WIUT\\00006878\\WAD_6878\\WAD_CW_6878\\DAL_6878\\obj\\",
+        "outputPath": "C:\\WIUT\\00006878\\WAD_6878\\WAD_CW_6878\\DAL_6878\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\akhad\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -78,14 +78,14 @@
         }
       }
     },
-    "c:\\WIUT\\00006878\\WAD_6878\\WAD_CW_6878\\WAD_CW_6878\\WAD_CW_6878.csproj": {
+    "C:\\WIUT\\00006878\\WAD_6878\\WAD_CW_6878\\WAD_CW_6878\\WAD_CW_6878.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\WIUT\\00006878\\WAD_6878\\WAD_CW_6878\\WAD_CW_6878\\WAD_CW_6878.csproj",
+        "projectUniqueName": "C:\\WIUT\\00006878\\WAD_6878\\WAD_CW_6878\\WAD_CW_6878\\WAD_CW_6878.csproj",
         "projectName": "WAD_CW_6878",
-        "projectPath": "c:\\WIUT\\00006878\\WAD_6878\\WAD_CW_6878\\WAD_CW_6878\\WAD_CW_6878.csproj",
+        "projectPath": "C:\\WIUT\\00006878\\WAD_6878\\WAD_CW_6878\\WAD_CW_6878\\WAD_CW_6878.csproj",
         "packagesPath": "C:\\Users\\akhad\\.nuget\\packages\\",
-        "outputPath": "c:\\WIUT\\00006878\\WAD_6878\\WAD_CW_6878\\WAD_CW_6878\\obj\\",
+        "outputPath": "C:\\WIUT\\00006878\\WAD_6878\\WAD_CW_6878\\WAD_CW_6878\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\akhad\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -102,8 +102,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "c:\\WIUT\\00006878\\WAD_6878\\WAD_CW_6878\\DAL_6878\\DAL_6878.csproj": {
-                "projectPath": "c:\\WIUT\\00006878\\WAD_6878\\WAD_CW_6878\\DAL_6878\\DAL_6878.csproj"
+              "C:\\WIUT\\00006878\\WAD_6878\\WAD_CW_6878\\DAL_6878\\DAL_6878.csproj": {
+                "projectPath": "C:\\WIUT\\00006878\\WAD_6878\\WAD_CW_6878\\DAL_6878\\DAL_6878.csproj"
               }
             }
           }
