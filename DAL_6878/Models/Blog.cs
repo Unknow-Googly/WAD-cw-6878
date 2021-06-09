@@ -18,6 +18,7 @@ namespace WAD_CW_6878.Models
         [Required]
         public string Description { get; set; }
 
+        public int UserId { get; set; }
         public User User { get; set; }
     }
 }
