@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -8,29 +9,28 @@ namespace WAD_CW_6878.Repositories
 {
     public class BlogRepository : InsertUpdateRepo<Blog>, IRepository<Blog>
     {
-        public Task InsertAsync(Blog entity)
-        {
-            throw new NotImplementedException();
-        }
+        
 
-        public Task DeleteAsync(int id)
+        public async Task DeleteAsync(int id)
         {
-            throw new NotImplementedException();
+            var blog = await dbContext.Blogs.FindAsync(id);
+            dbContext.Blogs.Remove(blog);
+            await dbContext.SaveChangesAsync();
         }
 
         public bool Exists(int id)
         {
-            throw new NotImplementedException();
+            return  dbContext.Blogs.Any(b => b.BlogId == id);
         }
 
-        public Task<List<Blog>> GetAllAsync()
+        public async Task<List<Blog>> GetAllAsync()
         {
-            throw new NotImplementedException();
+            return await dbContext.Blogs.Include(b => b.User).ToListAsync();
         }
 
-        public Task<Blog> FindAsync(int id)
+        public async Task<Blog> FindAsync(int id)
         {
-            throw new NotImplementedException();
+            return await dbContext.Blogs.Include(b => b.User).FirstOrDefaultAsync(m => m.BlogId == id);
         }
 
         public BlogRepository(BlogDBContext context) : base(context)
